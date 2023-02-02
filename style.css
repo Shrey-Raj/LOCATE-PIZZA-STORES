@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Abril Fatface", cursive;
+}
+
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 3px;  
+  height: 3px;
+  border-left: 0;
+  background-color: #e2e2e2;  
+}
+
+/* Customize the thumb (draggable part) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #ff6900;  
+  border-radius: 0px;  
+} 
+ 
+.main {
+  display: flex;
+}
+.store-list{
+  width: 20vw;
+  height: 100vh;
+  background: rgb(255, 253, 236);
+  overflow: auto;
+}
+.store-list h2{
+  background-color: #f7a707;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight:10;
+  padding: 1rem;
+
+}
+.store-list ul{
+  text-align: center;
+}
+
+
+#map {
+  height: 100vh;
+  width: 80vw;
+}
+
+.store-list .list{
+  padding: 0 1rem;
+  list-style-type:none ;
+}
+
+.store-list .shop-item{
+  margin: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding-bottom: 1rem;
+}
+
+.shop-item a{
+  text-decoration: none;
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+.shop-location{
+  font-family:    Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+/* <div class="leaflet-popup-content-wrapper">
+<div class="leaflet-popup-content" style="width: 301px;"><div>
+  <h4>Papa's Pizza House</h4>
+  <p>Gwalior, India, Shop no. 32, street: JKL, locality: MNO</p>
+  <div class="phone_number">
+      <a href="tel:333-333-3333">+91 333-333-3333</a>
+  </div>
+</div></div></div> */
+
+.leaflet-popup-content-wrapper{
+  padding: 0;
+  overflow: hidden;
+  background: rgb(250, 245, 194);
+}
+.leaflet-popup-content{
+  margin: 0;
+}
+.leaflet-popup-content h4{
+  font-size: 16px;
+  background: rgb(249, 105, 27);
+  color: white;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.leaflet-popup-content p{
+  padding: 0 16px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.phone_number{
+  padding: 16px;
+  padding-top: 0;
+  text-align: end;
+}
